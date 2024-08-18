@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.dice-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.dice {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    position: relative;
+}
+
+.face-1::before, .face-2::before, .face-3::before, .face-4::before, .face-5::before, .face-6::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.face-1::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.face-2::before {
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.face-2::after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.face-3::before, .face-3::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.face-3::before {
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.face-3::after {
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.face-3::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.face-4::before, .face-4::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.face-4::before {
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.face-4::after {
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.face-4::before {
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.face-4::after {
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.face-5::before, .face-5::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.face-5::before {
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.face-5::after {
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.face-5::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.face-5::before {
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.face-5::after {
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.face-6::before, .face-6::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.face-6::before {
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.face-6::after {
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.face-6::before {
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.face-6::before {
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.face-6::after {
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.face-6::before {
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.result {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+select {
+    padding: 10px;
+    font-size: 1em;
+}

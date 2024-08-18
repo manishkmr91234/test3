@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dice Roll Simulator</h1>
+        <div class="dice-container">
+            <div id="dice1" class="dice face-1"></div>
+            <div id="dice2" class="dice face-1" style="display: none;"></div>
+        </div>
+        <div class="result" id="result">Result: </div>
+        <div class="controls">
+            <select id="diceCount" onchange="toggleDice()">
+                <option value="1">One Die</option>
+                <option value="2">Two Dice</option>
+            </select>
+            <button onclick="rollDice()">Roll Dice</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
